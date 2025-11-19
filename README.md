@@ -306,12 +306,12 @@ class MainActivity : FlutterActivity() {
 
 ### Pré-requisitos
 
-- Flutter SDK (versão 3.9.2 ou superior)
-- Dart SDK
+- Flutter 3.35.4 • channel stable 
+- Dart 3.9.2
 - Android Studio / Xcode
 - Android SDK (para Android)
 - CocoaPods (para iOS)
-
+-
  
 ## Fluxo de Dados
 
