@@ -21,6 +21,15 @@ Aplicativo Flutter que exibe personagens da série Rick and Morty, implementado 
   [Clique aqui para baixar o vídeo](demo-android.mov)
 </video>
 
+
+[![Demo iOS](demo-ios.mov)](demo-ios.mov)
+
+<video width="100%" controls>
+  <source src="demo-ios.mov" type="video/quicktime">
+  Seu navegador não suporta a reprodução de vídeo. 
+  [Clique aqui para baixar o vídeo](demo-ios.mov)
+</video>
+
 ## Arquitetura
 
 O projeto utiliza **Clean Architecture** com separação clara de responsabilidades em três camadas principais:
