@@ -1,0 +1,9 @@
+class ServerException implements Exception {
+  final String message;
+  ServerException({required this.message});
+}
+
+class NetWorkException implements Exception {
+  final String message;
+  NetWorkException({required this.message});
+}
