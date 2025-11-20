@@ -7,7 +7,7 @@ import '../../../../../core/errors/exception.dart';
 import '../../../../../core/network/network_info.dart';
 import '../models/models.dart';
 
-abstract class ICharacterDataSource {
+abstract interface class ICharacterDataSource {
   Future<CharacterResponseModel> getCharacters({int? page});
 }
 

@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import '../../../../../core/errors/failures.dart';
 import '../entities/character_response_entity.dart';
 
-abstract class ICharacterRepository {
+abstract interface class ICharacterRepository {
   /// Busca todos os personagens com paginação opcional
   ///
   /// [page] - Número da página (opcional, padrão: 1)
