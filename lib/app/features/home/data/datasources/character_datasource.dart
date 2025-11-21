@@ -20,10 +20,14 @@ class CharacterDataSourceImpl implements ICharacterDataSource {
   Future<CharacterResponseModel> getCharacters({int? page}) async {
     if (await netWorkInfo!.isConnected) {
       final pageNumber = page ?? 1;
-      final response = await client
-          .get(Uri.parse('${AppEnv.baseURL}/character?page=$pageNumber'))
-          .timeout(const Duration(seconds: 10));
-      return CharacterResponseModel.fromJson(json.decode(response.body));
+      try {
+        final response = await client
+            .get(Uri.parse('${AppEnv.baseURL}/character?page=$pageNumber'))
+            .timeout(const Duration(seconds: 10));
+        return CharacterResponseModel.fromJson(json.decode(response.body));
+      } catch (_) {
+        throw ServerException(message: 'Ocorreu um erro no servidor');
+      }
     } else {
       throw NetWorkException(message: 'Sem conexão a internet');
     }
